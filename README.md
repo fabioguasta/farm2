@@ -1,3 +1,7 @@
+This is project required by the exam of SOL (Operating Systems and Lab) by University of Pisa year 2022/23.  
+To follow, the description of the project given by the professor written in Italian.
+
+
 > **Progetto** **SOL** **--** **Corso** **A** **e** **B** **--**
 > **a.a.** **23/24**
 >
