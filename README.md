@@ -88,22 +88,22 @@ quindi il processo Collector stamperà:
 Gli argomenti che opzionalmente possono essere passati al processo
 *MasterWorker* sono i seguenti:
 
-> • -n \<nthread\> specifica il numero di thread *Worker* del processo
-> *MasterWorker* (valore di default 4)
->
-> • -q \<qlen\> specifica la lunghezza della coda concorrente tra il
-> thread *Master* ed i thread *Worker* (valore di default 8)
->
-> • -d \<directory-name\> specifica una directory in cui sono contenuti
-> file binari ed eventualmente altre directory contenente file binari
-> qualora l'opzione venga ripetuta più volte; i file binari dovranno
-> essere utilizzati come file di input per il calcolo;
->
-> • -t \<delay\> specifica un tempo **in millisecondi** che
-> intercorre tra l'inserimento di due task consecutivi nella coda
-> concorrente da parte del thread *Master* (valore di default 0). Usare
-> la chiamata di libreria *usleep* o la system call *nanosleep* per
-> implementare il ritardo.
+ • -n \<nthread\> specifica il numero di thread *Worker* del processo
+ *MasterWorker* (valore di default 4)
+
+ • -q \<qlen\> specifica la lunghezza della coda concorrente tra il
+ thread *Master* ed i thread *Worker* (valore di default 8)
+
+ • -d \<directory-name\> specifica una directory in cui sono contenuti
+ file binari ed eventualmente altre directory contenente file binari
+ qualora l'opzione venga ripetuta più volte; i file binari dovranno
+ essere utilizzati come file di input per il calcolo;
+
+ • -t \<delay\> specifica un tempo **in millisecondi** che
+ intercorre tra l'inserimento di due task consecutivi nella coda
+ concorrente da parte del thread *Master* (valore di default 0). Usare
+ la chiamata di libreria *usleep* o la system call *nanosleep* per
+ implementare il ritardo.
 
 Il processo *MasterWorker* deve gestire i segnali **SIGHUP,**
 **SIGINT,** **SIGQUIT,** **SIGTERM,** **SIGUSR1** **e** **SIGUSR2**.
