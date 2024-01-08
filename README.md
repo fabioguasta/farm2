@@ -24,7 +24,7 @@ essere creato all’interno della directory del progetto e deve essere cancellat
 
 Il processo *MasterWorker* legge gli argomenti passati alla funzione *main* uno alla volta, verificando che siano
 file regolari. Se viene passata l’opzione ‘-d’ che prevede come argomento un nome di directory, viene navigata
-la directory passata come argomento e considerando tutti i file e le directory al suo interno.
+la directory passata come argomento e considerando tutti i file e le directory al suo interno. 
 
 Il nome del generico file di input (unitamente ad altre eventuali informazioni) viene inviato ad uno dei thread
 *Worker* del pool tramite una coda concorrente condivisa (denominata “coda concorrente dei task da elaborare”
